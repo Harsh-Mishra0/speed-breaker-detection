@@ -1,0 +1,22 @@
+# Speed Breaker Detection using Deep Learning
+
+This project detects road speed breakers from images using a MobileNetV2 deep learning model.
+
+## Tech Stack
+Python
+TensorFlow
+MobileNetV2
+Streamlit
+
+## Project Structure
+
+notebooks/ - model training  
+models/ - trained model  
+src/ - prediction logic  
+demo/ - Streamlit web app  
+
+## Run the Project
+
+pip install -r requirements.txt
+
+streamlit run demo/app.py
