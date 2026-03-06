@@ -1,22 +1,188 @@
-# Speed Breaker Detection using Deep Learning
+<h1 align="center">🚧 Speed Breaker Detection using Deep Learning</h1>
 
-This project detects road speed breakers from images using a MobileNetV2 deep learning model.
+<p align="center">
+A Computer Vision project that detects <b>speed breakers on roads</b> using a Deep Learning model based on <b>MobileNetV2 Transfer Learning</b>.
+</p>
 
-## Tech Stack
-Python
-TensorFlow
-MobileNetV2
-Streamlit
+<p align="center">
 
-## Project Structure
+<img src="https://img.shields.io/badge/Python-3.10-blue?logo=python">
+<img src="https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?logo=tensorflow">
+<img src="https://img.shields.io/badge/Machine%20Learning-Project-green">
+<img src="https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit">
 
-notebooks/ - model training  
-models/ - trained model  
-src/ - prediction logic  
-demo/ - Streamlit web app  
+</p>
 
-## Run the Project
+<hr>
 
+<h2>📌 Project Overview</h2>
+
+<p>
+This project uses <b>Deep Learning and Transfer Learning</b> to detect speed breakers from road images.
+The model is trained using <b>MobileNetV2</b>, a lightweight convolutional neural network pretrained on ImageNet.
+</p>
+
+<p>
+The system also includes a <b>Streamlit web application</b> where users can upload a road image and the model will predict whether a speed breaker is present.
+</p>
+
+<hr>
+
+<h2>📌 Features</h2>
+
+<ul>
+<li>Deep Learning based road image classification</li>
+<li>Transfer Learning using MobileNetV2</li>
+<li>Image preprocessing pipeline</li>
+<li>Streamlit web application for real-time predictions</li>
+<li>Clean machine learning project structure</li>
+</ul>
+
+<hr>
+
+<h2>🧠 Model Architecture</h2>
+
+<pre>
+Road Image
+   ↓
+Image Preprocessing
+   ↓
+MobileNetV2 Feature Extractor
+   ↓
+Global Average Pooling
+   ↓
+Dense Layer
+   ↓
+Binary Classification
+   ↓
+Prediction (Speed Breaker / Normal Road)
+</pre>
+
+<hr>
+
+<h2>📊 Training Accuracy</h2>
+
+<p align="center">
+<img src="images/accuracy_graph.png" width="600">
+</p>
+
+<p align="center">
+Example training accuracy graph from the model training process.
+</p>
+
+<hr>
+
+<h2>🛠 Tech Stack</h2>
+
+<ul>
+<li>Python</li>
+<li>TensorFlow / Keras</li>
+<li>MobileNetV2</li>
+<li>NumPy</li>
+<li>OpenCV</li>
+<li>Streamlit</li>
+<li>Matplotlib</li>
+</ul>
+
+<hr>
+
+<h2>📂 Project Structure</h2>
+
+<pre>
+speed-breaker-detection
+│
+├── notebooks
+│   └── training.ipynb
+│
+├── models
+│   └── speedbreaker_model.h5
+│
+├── src
+│   └── predict.py
+│
+├── demo
+│   └── app.py
+│
+├── images
+│   └── accuracy_graph.png
+│
+├── requirements.txt
+└── README.md
+</pre>
+
+<hr>
+
+<h2>🚀 Installation</h2>
+
+<pre>
+git clone https://github.com/Harsh-Mishra0/speed-breaker-detection.git
+cd speed-breaker-detection
+</pre>
+
+Install required libraries:
+
+<pre>
 pip install -r requirements.txt
+</pre>
 
+<hr>
+
+<h2>▶ Run the Application</h2>
+
+Start the Streamlit application:
+
+<pre>
 streamlit run demo/app.py
+</pre>
+
+Then open the browser and upload a road image to detect speed breakers.
+
+<hr>
+
+<h2>📊 Model Training</h2>
+
+<p>
+The model was trained using <b>Google Colab</b> with GPU acceleration.
+</p>
+
+Training steps:
+
+<ol>
+<li>Load dataset</li>
+<li>Preprocess road images</li>
+<li>Apply transfer learning using MobileNetV2</li>
+<li>Train model for multiple epochs</li>
+<li>Save trained model (.h5 file)</li>
+</ol>
+
+<hr>
+
+<h2>📈 Future Improvements</h2>
+
+<ul>
+<li>Real-time speed breaker detection using OpenCV</li>
+<li>Video-based road analysis</li>
+<li>YOLO object detection for better accuracy</li>
+<li>Cloud deployment (AWS / GCP)</li>
+</ul>
+
+<hr>
+
+<h2>👨‍💻 Author</h2>
+
+<p>
+<b>Harsh Mishra</b><br>
+AI / ML Engineer<br>
+B.Tech – Artificial Intelligence & Machine Learning
+</p>
+
+<p>
+GitHub:  
+<a href="https://github.com/Harsh-Mishra0">https://github.com/Harsh-Mishra0</a>
+</p>
+
+<hr>
+
+<p align="center">
+⭐ If you found this project interesting, feel free to star the repository!
+</p>
